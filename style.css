@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.conatiner {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 10%;
+  background: linear-gradient(150deg, #0205d8, #c5269d);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.logo {
+  width: 200px;
+
+  margin-top: 50px;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+}
+
+.content .span {
+  color: orange;
+}
+
+.content .p {
+  font-size: 16px;
+  color: rgb(201, 201, 201);
+}
+.content h2 {
+  font-size: 66px;
+  color: rgb(255, 255, 255);
+}
+
+.time {
+  display: flex;
+  margin-top: 10px;
+}
+
+.time div {
+  flex-basis: 100px;
+  color: white;
+}
+.time div p {
+  font-size: 52px;
+  color: white;
+}
+
+.time div span {
+  margin-left: 5px;
+}
+
+button {
+  margin-top: 30px;
+  font-size: 22px;
+  padding: 3px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+button:hover {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.rocket {
+  width: 250px;
+  position: absolute;
+
+  right: 15%;
+  bottom: 0;
+  animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  100% {
+    bottom: 110%;
+    opacity: 1;
+  }
+}
